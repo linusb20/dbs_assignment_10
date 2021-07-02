@@ -1,21 +1,7 @@
 #!/usr/bin/env python3
 
-from os import path
-from os import makedirs as mkdir
 import pandas as pd
-
-project_root_dir = path.join(path.dirname(__file__), path.pardir) 
-csv_import_dir = path.join(project_root_dir, 'import') 
-csv_export_dir = path.join(project_root_dir, 'export') 
-
-if not path.exists(csv_export_dir):
-    mkdir(csv_export_dir)
-
-def csv_in_loc(fname):
-    return path.abspath(path.join(csv_import_dir, fname)) 
-
-def csv_out_loc(fname):
-    return path.abspath(path.join(csv_export_dir, fname)) 
+from get_loc import csv_in_loc, csv_out_loc
 
 
 #Average Temperature Data Frame
