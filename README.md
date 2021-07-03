@@ -7,6 +7,12 @@ python3 with packages:
 - pandas
 - bokeh
 
+Run to install all necessary dependencies:
+
+```
+$ pip install -r requirements.txt
+```
+
 ## Build
 
 Run commands from root of project directory:
