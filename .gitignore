@@ -1,3 +1,4 @@
 env
 ressources/**
 csv_output/**
+**/__pycache__
